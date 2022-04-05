@@ -7,6 +7,7 @@ Output : full_name : ""500apps_infinity"""-->
 <template>
     <div>
         <h4>10th question</h4>
+        <p>{{full_name}}</p>
         <button @click="fun1()">Button</button>
     </div>
 </template>
@@ -20,7 +21,7 @@ export default {
         name1:"",
         first_name:"500apps",
         last_name:"infinity",
-        
+        full_name:""
     }
     },
     
@@ -29,6 +30,7 @@ export default {
         this.full_name=this.first_name+"_"+this.last_name
            alert(this.full_name)
            console.log(this.full_name)
+           
            
 
 
