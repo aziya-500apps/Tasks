@@ -16,36 +16,12 @@ const routes=[
     {path:"/",name:"Home",component:HelloWorld},
     {path:"/first",name:"First",component:FirstQues},
     {path:"/second",name:"Second",component:SecondQues},
-    {
-        path:"/third",
-        name:"Third",
-        component:ThirdQues
-    },
-    {
-        path:"/fifth",
-        name:"Fifth",
-        component:FifthQues
-    },
-    {
-        path:"/sixth",
-        name:"Sixth",
-        component:SixthQues
-    },
-    {
-        path:"/seventh",
-        name:"Seventh",
-        component:SeventhQues
-    },
-    {
-        path:"/eight",
-        name:"Eight",
-        component:EightQues
-    },
-   {
-    path:"/tenth",
-    name:"Tenth",
-    component:TenthQues
-}
+    {path:"/third",name:"Third",component:ThirdQues},
+    {path:"/fifth",name:"Fifth",component:FifthQues},
+    {path:"/sixth",name:"Sixth",component:SixthQues},
+    {path:"/seventh",name:"Seventh",component:SeventhQues},
+    {path:"/eight",name:"Eight",component:EightQues},
+   {path:"/tenth",name:"Tenth",component:TenthQues}
 ]
 let router =new Router({routes})
 export default router

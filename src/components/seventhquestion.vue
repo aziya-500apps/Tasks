@@ -5,12 +5,12 @@
         <label for="Status">Status</label>
         <select id="stat">
           <option>Select</option>
-          <option @click="openfun()"></option>
+          <option @click="openfun()">Opening</option>
           <option @click="pendingfun()">Pending</option>
           <option @click="closefun()">Closed</option>
         </select>
       </form>
-      <button @click="opens()">open</button>
+      <button @click="openfun()">open</button>
       <p>{{ opendata }}</p>
     </div>
     <div>
@@ -77,7 +77,7 @@ export default {
 
   methods: {
     openfun() {
-      this.opendata = this.data[0],this.data[1];
+      this.opendata = this.data[0];
     },
     pendingfun(){
        this.opendata = this.data[0],this.data[1];
