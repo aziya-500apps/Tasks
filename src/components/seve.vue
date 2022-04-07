@@ -4,27 +4,21 @@
     <select
       name="users"
       @change="onChange($event)"
-      class="form-select form-control"
-    >
+      class="form-select form-control">
       <option>status</option>
 
       <option value="open">open</option>
 
-      {{
-        opendata
-      }}
+      {{opendata}}
 
       <option value="closed">closed</option>
 
-      {{
-        closeddata
-      }}
+      {{closeddata}}
 
       <option value="pending">pending</option>
+      {{pendingdata1}}<br>
 
-      {{
-        pendingdata2
-      }}
+      {{pendingdata2}}
 
       <p>{{ result }}</p>
     </select>

@@ -5,27 +5,19 @@
     <table align="center" class="table table-bordered mt-5">
       <thead>
         <tr>
-          <th>email</th>
-
-          <th>id</th>
-
-          <th>name</th>
-
-          <th>status</th>
+          <th>email</th><th>id</th><th>name</th><th>status</th>
         </tr>
+       </thead>
+       <tbody>
 
-        <tr v-if="tableData.length > 0">
+        <tr v-for= "tabledata in tableData" :key="tabledata.id">
           <td>{{ tableData[0].email }}</td>
-
           <td>{{ tableData[0].id }}</td>
-
           <td>{{ tableData[0].name }}</td>
-
           <td>{{ tableData[0].status }}</td>
         </tr>
-      </thead>
+     </tbody>
 
-      <tbody></tbody>
     </table>
   </div>
 </template>
